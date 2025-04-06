@@ -1,0 +1,103 @@
+*{
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(237, 61, 237, 0.5);
+    color: black;
+}
+
+.contenedor1{
+    width: 200px;
+    height: 180px;
+}
+
+.name input{
+    position: fixed; top: 40px; left: 0px;
+    width: 200px;
+    height: 30px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.insta input{
+    position: fixed; top: 100px; left: 0px;
+    width: 200px;
+    height: 30px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.link input{
+    position: fixed; top: 160px; left: 0px;
+    width: 200px;
+    height: 30px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.contenedor2{
+    position: fixed;top: 0; left: 300px;
+    width: 200px;
+    height: 400px;
+}
+
+.loyalty-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+/* Ocultamos el radio original */
+.loyalty-card input[type="radio"] {
+    display: none;
+}
+
+/* Estilo base del corazón */
+.loyalty-card label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Corazón no seleccionado */
+.loyalty-card label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="gray"/></svg>');
+    background-size: cover;
+    transition: all 0.3s ease;
+}
+
+/* Corazón seleccionado */
+.loyalty-card input[type="radio"]:checked + label:before {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="red"/></svg>');
+}
+
+/* Opcional: Efecto hover */
+.loyalty-card label:hover:before {
+    transform: scale(1.1);
+}
