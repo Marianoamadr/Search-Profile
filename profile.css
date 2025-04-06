@@ -11,10 +11,6 @@ body{
     color: black;
 }
 
-h2{
-    text-decoration: underline
-}
-
 .contenedor1{
     width: 200px;
     height: 180px;
@@ -62,9 +58,6 @@ h2{
     height: 400px;
 }
 
-.contenedor2 h3{
-    text-decoration: underline;
-}
 .loyalty-card {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
