@@ -7,29 +7,8 @@ body {
     background-image: url('background.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
-    min-height: 100vh;
-    /* Añade un color de respaldo similar al de tu imagen */
-    background-color: #f0f0f0; 
-    /* Mejorar renderizado en algunos navegadores */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-/* Ajustes para móviles en orientación vertical */
-@media (max-width: 768px) and (orientation: portrait) {
-    body {
-        background-attachment: scroll;
-        background-position: top center;
-    }
-}
-
-/* Ajustes para tablets y escritorio en orientación horizontal */
-@media (min-width: 769px) and (orientation: landscape) {
-    body {
-        background-position: center 25%;
-    }
 }
 
 .search{
