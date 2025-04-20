@@ -4,12 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url('background.jpg');
-    background-color: palevioletred;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    aspect-ratio: 16 / 9; /* siempre 16:9 sin alterar la imagen */
+    background: url('background.jpg') center/cover no-repeat;
 }
 
 .search{
