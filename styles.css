@@ -14,7 +14,7 @@
 
 .contenido {
     width: 80%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/10;
     background: url('background.jpg') center/cover no-repeat;
     background-color: white; /* si tu imagen tiene transparencia */
 }
