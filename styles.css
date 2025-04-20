@@ -3,10 +3,20 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body {
-    aspect-ratio: 16 / 9; /* siempre 16:9 sin alterar la imagen */
+
+.fondo {
+    background: url('fondo-sencundario.png') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    width: 80%;
+    aspect-ratio: 16/9;
     background: url('background.jpg') center/cover no-repeat;
-    background-color: palevioletred;
+    background-color: white; /* si tu imagen tiene transparencia */
 }
 
 .search{
