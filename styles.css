@@ -5,7 +5,7 @@
 }
 
 .fondo {
-    background: url('fondo-sencundario.png') center/cover no-repeat;
+    background: url('backgraund.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
