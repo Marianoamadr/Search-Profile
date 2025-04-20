@@ -6,6 +6,7 @@
 body {
     aspect-ratio: 16 / 9; /* siempre 16:9 sin alterar la imagen */
     background: url('background.jpg') center/cover no-repeat;
+    background-color: palevioletred;
 }
 
 .search{
